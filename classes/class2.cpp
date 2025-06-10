@@ -9,5 +9,17 @@ int main(){                             // Code exectution starts
 
     float PI = 3.14;                               
     cout << PI << "\n" << sizeof(PI) << "\n";       // Output   ---> 3.14, 4
+
+    // Typecasting
+
+    // Conversion
+    char grade = 'A';
+    int value = grade;
+    cout << value << "\n";
+
+    // Caasting
+    float price = 100.99;
+    int mrp = price;
+    cout << mrp << "\n";
     return 0;
 }
