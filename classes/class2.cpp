@@ -13,13 +13,13 @@ int main(){                             // Code exectution starts
     // Typecasting
 
     // Conversion
-    char grade = 'A';
+    char grade = 'A';           
     int value = grade;
-    cout << value << "\n";
+    cout << value << "\n";      // Output   --->    65
 
-    // Caasting
+    // Casting
     float price = 100.99;
     int mrp = price;
-    cout << mrp << "\n";
+    cout << mrp << "\n";        // Output   --->    100
     return 0;
 }
