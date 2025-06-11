@@ -24,15 +24,30 @@ int main(){
     // }
     
     // Find the number is even or odd.
-    int num;
-    cout << "Enter the number: ";
-    cin >> num;
-    if (num % 2 == 0)
+    // int num;
+    // cout << "Enter the number: ";
+    // cin >> num;
+    // if (num % 2 == 0)
+    // {
+    //     cout << "Number is even";
+    // }   else    {
+    //     cout << "Number is odd";
+    // }
+    
+    // Grading system
+    int marks;
+    cout << "Enter the marks: ";
+    cin >> marks;
+    if (marks >= 90)
     {
-        cout << "Number is even";
+        cout << "Grade is A";
+    }   else if (marks <= 90 && marks >= 80)
+    {
+        cout << "Grade is B";
     }   else    {
-        cout << "Number is odd";
+        cout << "Grade is C";
     }
+    
     
 
     return 0;
