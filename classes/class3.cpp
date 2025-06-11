@@ -13,14 +13,25 @@ int main(){
     // }
 
     // Eligible for voting
-    int age;
-    cout << "Enter age: ";
-    cin >> age;
-    if (age >= 18)
+    // int age;
+    // cout << "Enter age: ";
+    // cin >> age;
+    // if (age >= 18)
+    // {
+    //     cout << "You can vote.";
+    // }   else    {
+    //     cout << "You can't vote";
+    // }
+    
+    // Find the number is even or odd.
+    int num;
+    cout << "Enter the number: ";
+    cin >> num;
+    if (num % 2 == 0)
     {
-        cout << "You can vote.";
+        cout << "Number is even";
     }   else    {
-        cout << "You can't vote";
+        cout << "Number is odd";
     }
     
 
