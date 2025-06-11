@@ -3,6 +3,7 @@ using namespace std;
 
 int main(){
 
+    //* if-else
     // Find the number is positive or negeative.
     // int n = -60;
     // if (n >= 0)
@@ -34,6 +35,7 @@ int main(){
     //     cout << "Number is odd";
     // }
     
+    //* if-else if-else
     // Grading system
     // int marks;
     // cout << "Enter the marks: ";
@@ -49,16 +51,31 @@ int main(){
     // }
 
     // Check lowerCase or uupperCase
-    char ch;
-    cout << "Enter the character: ";
-    cin >> ch;
-    if (ch >= 'a' && ch <= 'z')
-    {
-        cout << "lowercase";
-    }   else    {
-        cout << "uppercase";
-    }
+    // char ch;
+    // cout << "Enter the character: ";
+    // cin >> ch;
+    // if (ch >= 'a' && ch <= 'z')
+    // {
+    //     cout << "lowercase";
+    // }   else    {
+    //     cout << "uppercase";
+    // }
     
+    //* Ternary Operator
+    // int n = 60;
+    // cout << (n >= 0 ? "positive" : "negative") << endl;
 
+    // * while loop
+    // Print number from 1 to n
+    int n;
+    cout << "Enter the value of n: ";
+    cin >> n;
+    int count = 1;
+    while (count <= n)
+    {
+        cout << count << " ";
+        count++;
+    }
+    cout << endl;
     return 0;
 }
