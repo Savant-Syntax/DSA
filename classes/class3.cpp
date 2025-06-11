@@ -35,19 +35,29 @@ int main(){
     // }
     
     // Grading system
-    int marks;
-    cout << "Enter the marks: ";
-    cin >> marks;
-    if (marks >= 90)
+    // int marks;
+    // cout << "Enter the marks: ";
+    // cin >> marks;
+    // if (marks >= 90)
+    // {
+    //     cout << "Grade is A";
+    // }   else if (marks <= 90 && marks >= 80)
+    // {
+    //     cout << "Grade is B";
+    // }   else    {
+    //     cout << "Grade is C";
+    // }
+
+    // Check lowerCase or uupperCase
+    char ch;
+    cout << "Enter the character: ";
+    cin >> ch;
+    if (ch >= 'a' && ch <= 'z')
     {
-        cout << "Grade is A";
-    }   else if (marks <= 90 && marks >= 80)
-    {
-        cout << "Grade is B";
+        cout << "lowercase";
     }   else    {
-        cout << "Grade is C";
+        cout << "uppercase";
     }
-    
     
 
     return 0;
