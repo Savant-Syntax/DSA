@@ -65,17 +65,28 @@ int main(){
     // int n = 60;
     // cout << (n >= 0 ? "positive" : "negative") << endl;
 
-    // * while loop
+    //* while loop
     // Print number from 1 to n
-    int n;
-    cout << "Enter the value of n: ";
-    cin >> n;
-    int count = 1;
-    while (count <= n)
+    // int n;
+    // cout << "Enter the value of n: ";
+    // cin >> n;
+    // int count = 1;
+    // while (count <= n)
+    // {
+    //     cout << count << " ";
+    //     count++;
+    // }
+    // cout << endl;
+
+    //* for loop
+    // Sum of numbers from 1 to n.
+    int n = 10;
+    int sum = 0;
+    for (int i = 0; i <+ n; i++)
     {
-        cout << count << " ";
-        count++;
+        sum += i;
     }
-    cout << endl;
+    cout << "sum: " << sum << endl;
+
     return 0;
 }
