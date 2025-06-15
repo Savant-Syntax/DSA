@@ -94,7 +94,7 @@ int main(){
     //     cout << endl;
     // }
     
-    // 1.2 Right Angled Triangle (using number in continous increasing manner)
+    // 1.2 Floyd's Triangle Pattern
     // int n;
     // int num = 1;
     // cout << "Enter the value of n: ";
@@ -148,6 +148,49 @@ int main(){
     //     cout << endl;
     // }
     
+    // Inverted Triangle Pattern
+    // int n;
+    // cout << "Enter the value of n: ";
+    // cin >> n;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < i; j++)
+    //     {
+    //         cout << " ";
+    //     }
+    //     for (int j = 0; j < n - i; j++)
+    //     {
+    //         cout << i + 1;
+    //     }
+    //     cout << endl;
+    // }
+    
+    // Pyramid Pattern
+    // int n;
+    // cout << "Enter the value of n: ";
+    // cin >> n;
+    
+    // for (int i = 0; i < n; i++)
+    // {
+    //     //spaces: n-i-1
+    //     for (int j = 0; j < n-i-1; j++)
+    //     {
+    //         cout << " ";
+    //     }
 
-    // return 0;
+    //     //nums1
+    //     for (int j = 1; j <= i+1; j++)
+    //     {
+    //         cout << j;
+    //     }
+
+    //     //nums2
+    //     for (int j = i; j > 0; j--)
+    //     {
+    //         cout << j;
+    //     }
+    //     cout << endl;
+    // }
+    
+    return 0;
 }
