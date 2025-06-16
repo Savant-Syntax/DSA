@@ -239,6 +239,44 @@ int main(){
     //     cout << endl;
     // }
     
+    // Butterfly Pattern
+    int n;
+    cout << "Enter the value of n: ";
+    cin >> n;
+
+    // top half 
+    for (int i = 1; i <= n; i++) {
+        // stars on the left
+        for (int j = 1; j <= i; j++) {
+            cout << "*";
+        }
+        // spaces in the middle
+        for (int j = 1; j <= 2 * (n - i); j++) {
+            cout << " ";
+        }
+        // stars on the right
+        for (int j = 1; j <= i; j++) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    // bottom half 
+    for (int i = n; i >= 1; i--) {
+        // stars on the left
+        for (int j = 1; j <= i; j++) {
+            cout << "*";
+        }
+        // spaces in the middle
+        for (int j = 1; j <= 2 * (n - i); j++) {
+            cout << " ";
+        }
+        // stars on the right
+        for (int j = 1; j <= i; j++) {
+            cout << "*";
+        }
+        cout << endl;
+    }
     
     return 0;
 }
