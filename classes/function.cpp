@@ -39,10 +39,32 @@ int factorialN(int n){
     return fact;
 }
 
-int main(){
-    cout << printHello() << endl;   // function call
-    cout << sum(5, 8) << endl;      // 5, 8 => Arguments => actual values
-    cout << min(8, 4) << endl;
-    cout << sumN(6) << endl;
-    cout << factorialN(6) << endl;
+// Passed by value
+int sum2(int a, int b){
+    a = a + 10;                         // 15   changed value
+    b = b + 10;                         // 14   changed value
+    return a + b;                       // 29
+}
+
+void changeX(int x){
+    x = 2 * x;
+    cout << "x = " << x << endl;
+}
+
+    int main(){
+        cout << printHello() << endl;   // function call
+        cout << sum(5, 8) << endl;      // 5, 8 => Arguments => actual values
+        cout << min(8, 4) << endl;
+        cout << sumN(6) << endl;
+        cout << factorialN(6) << endl;
+
+        int a = 5, b = 4;
+        cout << sum2(a, b) << endl;
+        cout << "Unchanged value of a: " << a << endl;
+        cout << "Unchanged value of b: " << b << endl;
+
+        int x = 5;
+        changeX(x);
+        cout << "x =  " << x << endl;
+        return 0;
 }
