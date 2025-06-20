@@ -51,6 +51,28 @@ void changeX(int x){
     cout << "x = " << x << endl;
 }
 
+// Calculate the sum of digit of a number
+int sumOfDigits(int num){
+    int digSum = 0;
+
+    while (num > 0)
+    {
+        int lastDig = num % 10;
+        num /= 10;
+        digSum += lastDig;
+    }
+    return digSum;
+}
+
+// Calculate nCr Binomial coefficient for n and r
+int nCr(int n, int r){
+    int fac_n = factorialN(n);
+    int fac_r = factorialN(r);
+    int fac_nmr = factorialN(n-r);
+
+    return fac_n / (fac_r * fac_nmr);
+}
+
     int main(){
         cout << printHello() << endl;   // function call
         cout << sum(5, 8) << endl;      // 5, 8 => Arguments => actual values
@@ -66,5 +88,10 @@ void changeX(int x){
         int x = 5;
         changeX(x);
         cout << "x =  " << x << endl;
+
+        cout << "sum = " << sumOfDigits(1234) << endl;
+
+        int n = 8, r = 2;
+        cout << "C(n, r) = " << nCr(n, r);
         return 0;
 }
